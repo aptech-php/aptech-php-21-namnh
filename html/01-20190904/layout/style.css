@@ -1,0 +1,20 @@
+h1 {
+  color: navy;
+}
+
+h2 {
+  /* color: green; */
+  background-color: pink;
+}
+
+#h3-tren {
+  color: red;
+}
+
+#h3-duoi {
+  /* color: green; */
+}
+
+.mau-xanh-la-cay {
+  color: green;
+}
