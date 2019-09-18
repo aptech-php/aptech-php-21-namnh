@@ -1,0 +1,67 @@
+.Flag {
+  display: flex;
+
+  &__First,
+  &__Second,
+  &__Third {
+    height: 100px;
+    width: 33.33%;
+  }
+
+  &__First {
+    background-color: #002395;
+  }
+
+  &__Second {
+    background-color: #FFFFFF;
+  }
+
+  &__Third {
+    background-color: #ED2B39;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .Flag {
+
+    &__First,
+    &__Second,
+    &__Third {
+
+      width: 100%;
+    }
+
+    &__First {
+      background-color: #000;
+    }
+
+    &__Second {
+      background-color: #ED2B39;
+    }
+
+    &__Third {
+      background-color: #FAE042;
+    }
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Flag {
+    flex-direction: column;
+
+    &__First {
+      background-color: #000;
+    }
+
+    &__Second {
+      background-color: #FAE042;
+    }
+
+    &__Third {
+      background-color: #ED2B39;
+    }
+
+  }
+}

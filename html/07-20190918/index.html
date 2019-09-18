@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #First,
+    #Second,
+    #Third {
+      width: 33.33%;
+      height: 100px;
+    }
+
+    #Parent {
+      display: flex;
+    }
+
+    #First {
+      background-color: blue;
+    }
+
+    #Second {
+      background-color: palegreen;
+    }
+
+    #Third {
+      background-color: orange;
+    }
+
+
+
+    #Third {
+      background-color: darkcyan;
+    }
+
+    @media screen and (max-width:500px) {
+      #First {
+        background-color: orange;
+      }
+
+      #Third {
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="Parent">
+    <div id="First"></div>
+    <div id="Second"></div>
+    <div id="Third"></div>
+  </div>
+</body>
+
+</html>
