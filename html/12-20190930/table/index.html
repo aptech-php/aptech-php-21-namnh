@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    th,
+    td {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="data-1-row-1"></td>
+        <td id="data-2-row-1"></td>
+        <td id="data-3-row-1"></td>
+        <td id="data-4-row-1"></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <button onclick="themDuLieu();">Click de them du lieu</button>
+  <script>
+    var c = [1, 'a', 'b', 'c'];
+    console.log(c[3]);
+
+    function themDuLieu() {
+      var element = document.createElement('h1');
+      element.innerHTML = 'Hello PHP 21';
+      document.body.append(element);
+
+
+
+      for (var i = 1; i < 5; i++) {
+        var id = "data-" + i + "-row-1";
+        document.getElementById(id).innerHTML = c[i - 1];
+      }
+
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #third-div {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="div-duy-nhat" style="height:100px;background-color:olivedrab;"></div>
+  <button id="nut">An Div Di</button>
+  <div id="div-thu-hai" style="height:50px;width:50px;background-color:orange;" onclick="hienDiv()"></div>
+  <div id="third-div" style="height:100px;background-color:olivedrab;"></div>
+  <script>
+    function hienDiv() {
+      document.getElementById('third-div').style.display = 'block';
+    }
+    // function anDiv() {
+    //   document.getElementById('div-duy-nhat').style.display = 'none';
+    // }
+  </script>
+  <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+  <script>
+    $(document).ready(function () {
+      $('#nut').click(function () {
+        $('#div-duy-nhat').hide();
+      })
+    });
+  </script>
+</body>
+
+</html>

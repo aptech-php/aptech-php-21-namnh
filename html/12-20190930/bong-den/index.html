@@ -25,7 +25,7 @@
 
     function batTatBongDen() {
       console.log(chonAnh.src);
-      var kiemTra = chonAnh.src == 'http://127.0.0.1:5500/pic_bulboff.gif';
+      var kiemTra = chonAnh.src.includes('off.gif');
       console.log(kiemTra);
       if (kiemTra == true) {
         chonAnh.src = "./pic_bulbon.gif";
