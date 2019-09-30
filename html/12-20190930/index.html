@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <img id="anh" src="./pic_bulboff.gif" alt="">
+  <button onclick="batBongDen();">Bat Bong Den</button>
+  <button onclick="tatBongDen();">Tat Bong Den</button>
+  <button onclick="batTatBongDen();">Bat/Tat Bong Den</button>
+  <script>
+    // console.log(5 == "5");
+    var chonAnh = document.getElementById('anh');
+    // console.log(chonAnh.src);
+
+    function batBongDen() {
+      chonAnh.src = "./pic_bulbon.gif";
+    }
+
+    function tatBongDen() {
+      chonAnh.src = "./pic_bulboff.gif";
+    }
+
+    function batTatBongDen() {
+      console.log(chonAnh.src);
+      var kiemTra = chonAnh.src == 'http://127.0.0.1:5500/pic_bulboff.gif';
+      console.log(kiemTra);
+      if (kiemTra == true) {
+        chonAnh.src = "./pic_bulbon.gif";
+      } else {
+        chonAnh.src = "./pic_bulboff.gif";
+      }
+    }
+  </script>
+</body>
+
+</html>
