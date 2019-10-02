@@ -1,0 +1,2 @@
+<h1>xin chao cac ban PHP 21</h1>
+<img src="">
