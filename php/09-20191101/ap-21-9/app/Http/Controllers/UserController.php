@@ -10,7 +10,7 @@ class UserController extends Controller
     public function hienThiTatCaNguoiDung()
     {
         $users = DB::table('users')->get();
-        return view('users', ['users' => $users]);
+        return view('users', ['nguoi_dung' => $users]);
     }
 
     public function hienThiMotNguoiDung($id)
