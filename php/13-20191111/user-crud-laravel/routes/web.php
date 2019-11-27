@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::resource('/users', 'UserController');
+
+Route::get('/viet-bai', 'Controller@vietBai');
+Route::post('/luu-bai-viet', 'Controller@luuBaiViet')->name('luu-bai-viet');
